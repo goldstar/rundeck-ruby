@@ -10,12 +10,6 @@ module Rundeck
     # @private
     attr_accessor(*VALID_OPTIONS_KEYS)
 
-    # Sets all configuration options to their default values
-    # when this module is extended.
-    def self.extended(base)
-      base.reset
-    end
-
     # Convenience method to allow configuration options to be set in a block.
     def configure
       yield self
